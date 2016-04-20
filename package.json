@@ -1,0 +1,26 @@
+{
+  "name": "rails-spreadsheet",
+  "version": "1.0.0",
+  "description": "== README",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nLight/tutorial-rails-react-browserify.git"
+  },
+  "author": "Dmitriy Rozhkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nLight/tutorial-rails-react-browserify/issues"
+  },
+  "homepage": "https://github.com/nLight/tutorial-rails-react-browserify#readme",
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "browserify-incremental": "^3.1.1",
+  }
+}
