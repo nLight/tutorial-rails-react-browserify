@@ -1,5 +1,7 @@
-//= require underscore
-//= require ./row
+var _ = require("underscore");
+var React = require("react");
+var update = require("react-addons-update");
+var Row = require("./row");
 
 var NavButton = React.createClass({
   render: function() {
@@ -31,7 +33,7 @@ var Spreadsheet = React.createClass({
       return "";
     });
 
-    newState = React.addons.update(this.state, {
+    newState = update(this.state, {
       rows: {$push: [newRow]}
     });
 
@@ -39,11 +41,11 @@ var Spreadsheet = React.createClass({
   },
 
   addColumn: function() {
-    var newState = React.addons.update(this.state, {
+    var newState = update(this.state, {
       rows: {
         $apply: function(rows) {
           var _rows = rows.map(function(row){
-            var updatedRow = React.addons.update(row, {
+            var updatedRow = update(row, {
               $push: [""]
             });
             return updatedRow;
@@ -66,7 +68,7 @@ var Spreadsheet = React.createClass({
         query[row] = {};
         query[row][cell] = {$set: event.target.value};
 
-    var newState = React.addons.update(this.state, { rows: query });
+    var newState = update(this.state, { rows: query });
 
     this.setState(newState);
   },
@@ -107,3 +109,5 @@ var Spreadsheet = React.createClass({
     );
   }
 });
+
+module.exports = Spreadsheet;

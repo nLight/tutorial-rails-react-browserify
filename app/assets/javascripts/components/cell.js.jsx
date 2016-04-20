@@ -1,3 +1,5 @@
+var React = require("react");
+
 var Cell = React.createClass({
   getInitialState: function() {
     return {
@@ -46,3 +48,5 @@ var Cell = React.createClass({
     );
   }
 });
+
+module.exports = Cell;

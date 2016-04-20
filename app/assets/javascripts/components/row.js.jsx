@@ -1,4 +1,6 @@
-//= require ./cell
+var _ = require("underscore");
+var React = require("react");
+var Cell = require("./cell");
 
 var Row = React.createClass({
   render: function() {
@@ -16,3 +18,5 @@ var Row = React.createClass({
     );
   }
 });
+
+module.exports = Row;

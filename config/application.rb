@@ -8,6 +8,5 @@ Bundler.require(*Rails.groups)
 
 module BrowserifyTestApp
   class Application < Rails::Application
-    config.react.addons = true
   end
 end
