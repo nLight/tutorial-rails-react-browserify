@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/nLight/tutorial-rails-react-browserify#readme",
   "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
     "browserify": "^13.0.0",
     "browserify-incremental": "^3.1.1",
   }
